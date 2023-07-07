@@ -1,0 +1,127 @@
+@import "../../../src/sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/container";
+
+.cross {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  @include desktop {
+    display: none;
+  }
+}
+
+.crossWrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 12px;
+  padding-right: 16px;
+}
+.backdrop {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/img/menu/menu-bgr.png);
+  background-size: cover;
+  background-color: $mainBgColor;
+  overflow: hidden;
+  transform: translateX(-100%);
+  transition: transform 200ms linear;
+  &::after {
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    height: 343px;
+    content: "";
+  }
+
+  // @include desktop {
+  //   position: static;
+  //   background-color: transparent;
+  //   width: auto;
+  //   height: auto;
+  //   padding: 0;
+  //   flex-direction: row;
+  //   transform: translateX(0);
+  //   margin-left: 187px;
+
+  //   &::after {
+  //     display: none;
+  //   }
+  // }
+}
+
+.backdrop.active {
+  transform: translateX(0);
+}
+
+// .logoCrossWrapper {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+// .logo {
+//   @include tablet {
+//     height: 44px;
+//     width: 44px;
+//   }
+//   @include desktop {
+//     display: none;
+//   }
+// }
+
+.navList {
+  margin-top: 124px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  // @include desktop {
+  //   z-index: 3;
+  //   margin-top: 0px;
+  //   flex-direction: row;
+  //   align-items: center;
+  // }
+}
+
+.navItem {
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  // @include desktop {
+  //   margin-bottom: 0px;
+  //   margin-right: 30px;
+  //   &:last-child {
+  //     margin-left: 0;
+  //     margin-right: 0;
+  //   }
+  // }
+}
+
+.navLink {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.47;
+  letter-spacing: -0.02em;
+  color: $secondaryTextColor;
+  // @include tablet {
+  //   font-size: 24px;
+  // }
+  // @include desktop {
+  //   font-size: 14px;
+  //   line-height: 1.6;
+  // }
+}
+
+.active {
+  color: $mainAccentColor;
+  font-weight: 400;
+}

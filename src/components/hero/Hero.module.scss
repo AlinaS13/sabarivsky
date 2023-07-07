@@ -1,0 +1,117 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.containerHero {
+  //   min-width: 380px;
+  height: 490px;
+  margin-bottom: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-image: url(../../assets/img/hero/start-mob.png);
+  @mixin retina {
+    background-image: url(../../assets/img/hero/start-mob-1-x.png);
+  }
+  @media screen and (min-width: $breakpoint-tablet) {
+    // min-width: 768px;
+    min-height: 890px;
+    margin-bottom: 100px;
+    background-image: url(../../assets/img/hero/start-tab-1-x.png);
+    @mixin retina {
+      background-image: url(../../assets/img/hero/start-tab-2-x.png);
+    }
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    // min-width: 1280px;
+    margin-bottom: 128px;
+    min-height: 664px;
+    background-image: url(../../assets/img/hero/start-desk-1-x.png);
+    @mixin retina {
+      background-image: url(../../assets/img/hero/start-desk-2-x.png);
+    }
+  }
+}
+
+.heroTitle {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -1px;
+  color: $mainTextColor;
+  padding-top: 127px;
+  padding-right: 32px;
+  padding-left: 32px;
+  margin-bottom: 16px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -2px;
+
+    padding-top: 250px;
+    padding-right: 64px;
+    padding-left: 64px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    padding-top: 115px;
+    padding-right: 566px;
+    padding-left: 128px;
+  }
+}
+
+.heroText {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $mainTextColor;
+  padding-right: 32px;
+  padding-left: 32px;
+  margin-bottom: 32px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+
+    padding-right: 263px;
+    padding-left: 64px;
+    margin-bottom: 48px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    padding-right: 711px;
+    padding-left: 128px;
+  }
+}
+.heroBtnWrp {
+  padding-left: 32px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding-left: 64px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    padding-left: 128px;
+  }
+}
+.heroBtn {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  color: $btnTextColor;
+  background-color: $mainAccentColor;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 10px 20px;
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+    box-shadow: 0 0 10px 0 $mainAccentColor inset, 0 0 20px 2px $mainAccentColor;
+    border: 3px solid $mainAccentColor;
+  }
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 32px;
+  }
+}

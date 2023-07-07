@@ -1,0 +1,83 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.containerAbout {
+  min-height: 634px;
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 60px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-right: 32px;
+    margin-left: 32px;
+    min-height: 398px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 100px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-right: 128px;
+    margin-left: 128px;
+    min-height: 439px;
+    gap: 64px;
+    margin-bottom: 128px;
+  }
+}
+
+.aboutPreTitle {
+  color: $secondaryTextColor;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+  }
+}
+.aboutTitle {
+  color: $mainTextColor;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 24px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+.aboutText {
+  color: $mainTextColor;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  &:first-of-type {
+    margin-bottom: 16px;
+  }
+  &:last-of-type {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.aboutImg {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 358px;
+    height: 398px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    min-width: 523px;
+    min-height: 439px;
+  }
+}

@@ -1,0 +1,102 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.containeServices {
+  //   min-height: 634px;
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 60px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-right: 32px;
+    margin-left: 32px;
+    min-height: 398px;
+    margin-bottom: 126px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-right: 128px;
+    margin-left: 128px;
+    min-height: 439px;
+    margin-bottom: 128px;
+  }
+}
+
+.servicesPreTitle {
+  color: $secondaryTextColor;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+  }
+}
+.servicesTitle {
+  color: $mainTextColor;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 40px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-bottom: 64px;
+  }
+}
+
+.servicesList {
+  @media screen and (min-width: $breakpoint-tablet) {
+    // display: flex;
+    // gap: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 336px);
+    gap: 32px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    gap: 19px;
+  }
+}
+.servicesItem {
+  position: relative;
+  background: #1b1b1b;
+  //   min-width: 288px;
+  max-height: 132px;
+  border-radius: 16px;
+  //   border: 1pc solid transparent;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  margin-bottom: 40px;
+}
+.chekImg {
+  position: absolute;
+  left: 50%;
+  bottom: 60%;
+  transform: translate(-50%, -50%);
+}
+.servicesText {
+  text-align: center;
+  color: $mainTextColor;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.servicesDescription {
+  text-align: center;
+  color: $mainTextColor;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}

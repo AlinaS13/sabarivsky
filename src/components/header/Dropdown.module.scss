@@ -1,0 +1,45 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+
+.dropdown {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.dropdownHidden {
+  display: none;
+}
+
+.dropdownContent {
+  position: absolute;
+  top: 78px;
+  right: 128px;
+
+  height: 130px;
+  width: 161px;
+  padding: 18px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  background-color: var(--mainBgColor);
+  border: 1px solid $mainAccentColor;
+  border-radius: 8px;
+
+  @include tablet {
+    height: 134px;
+    width: 177px;
+  }
+
+  @include desktop {
+    right: 211px;
+
+    height: 134px;
+    width: 177px;
+  }
+}
