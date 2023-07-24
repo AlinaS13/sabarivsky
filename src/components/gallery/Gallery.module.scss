@@ -1,0 +1,53 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.containerGallery {
+  min-height: 634px;
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 60px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-right: 32px;
+    margin-left: 32px;
+    min-height: 398px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 100px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-right: 128px;
+    margin-left: 128px;
+    min-height: 439px;
+    gap: 64px;
+    margin-bottom: 128px;
+  }
+}
+
+.galleryPreTitle {
+  color: $secondaryTextColor;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+  }
+}
+.galleryTitle {
+  color: $mainTextColor;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 24px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
