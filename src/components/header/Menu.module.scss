@@ -6,7 +6,7 @@
   background-color: transparent;
   border: 0;
   padding: 0;
-  @include desktop {
+  @media screen and (min-width: $breakpoint-desktop) {
     display: none;
   }
 }

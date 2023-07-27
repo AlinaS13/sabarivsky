@@ -51,10 +51,12 @@
   }
 }
 
+.servicesListWrp {
+  display: flex;
+  justify-content: center;
+}
 .servicesList {
   @media screen and (min-width: $breakpoint-tablet) {
-    // display: flex;
-    // gap: 32px;
     display: grid;
     grid-template-columns: repeat(2, 336px);
     gap: 32px;
@@ -63,7 +65,10 @@
   @media screen and (min-width: $breakpoint-desktop) {
     display: grid;
     grid-template-columns: repeat(3, 330px);
-    gap: 19px;
+    grid-gap: 19px;
+  }
+  @media screen and (min-width: $breakpoint-desktop-small) {
+    grid-gap: 30px;
   }
 }
 .servicesItem {

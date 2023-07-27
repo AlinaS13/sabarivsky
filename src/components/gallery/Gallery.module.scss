@@ -10,16 +10,12 @@
     margin-right: 32px;
     margin-left: 32px;
     min-height: 398px;
-    display: flex;
-    align-items: center;
-    gap: 32px;
     margin-bottom: 100px;
   }
   @media screen and (min-width: $breakpoint-desktop) {
     margin-right: 128px;
     margin-left: 128px;
     min-height: 439px;
-    gap: 64px;
     margin-bottom: 128px;
   }
 }
@@ -50,4 +46,10 @@
     font-size: 40px;
     line-height: 44px;
   }
+}
+
+.videoContent {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
 }

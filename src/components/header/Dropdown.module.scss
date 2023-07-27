@@ -31,12 +31,12 @@
   border: 1px solid $mainAccentColor;
   border-radius: 8px;
 
-  @include tablet {
+  @media screen and (min-width: $breakpoint-tablet) {
     height: 134px;
     width: 177px;
   }
 
-  @include desktop {
+  @media screen and (min-width: $breakpoint-desktop) {
     right: 211px;
 
     height: 134px;

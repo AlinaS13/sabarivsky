@@ -1,15 +1,15 @@
-@import './mixins';
+@import "./mixins";
 
 .container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
-  @include tablet {
+  @media screen and (min-width: $breakpoint-tablet) {
     padding-left: 32px;
     padding-right: 32px;
   }
-  @include desktop {
+  @media screen and (min-width: $breakpoint-desktop) {
     padding-left: 100px;
     padding-right: 100px;
   }
