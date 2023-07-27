@@ -3,14 +3,14 @@ import style from "./Services.module.scss";
 
 export const Services = () => {
   return (
-    <section className={style.containeServices}>
+    <section className={style.servicesContainer}>
       <p className={style.servicesPreTitle}>що ми пропонуємо/</p>
       <h2 className={style.servicesTitle}>Послуги СТО під ключ</h2>
       <div className={style.servicesListWrp}>
         <ul className={style.servicesList}>
           <li className={style.servicesItem}>
             <img className={style.chekImg} src={chek}></img>
-            <div>
+            <div className={style.servicesTextWrp}>
               <p className={style.servicesText}>Малярні роботи</p>
               <p className={style.servicesDescription}>
                 повне або локальне фарбування авто

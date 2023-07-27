@@ -1,0 +1,116 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.partnersContainer {
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 60px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-right: 32px;
+    margin-left: 32px;
+    min-height: 398px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-right: 128px;
+    margin-left: 128px;
+    min-height: 439px;
+  }
+}
+
+.partnersPreTitle {
+  color: $secondaryTextColor;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+  }
+}
+.partnersTitle {
+  color: $mainTextColor;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 24px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-bottom: 64px;
+  }
+}
+
+// .partnersListWrp {
+//   //   display: flex;
+//   //   justify-content: center;
+// //   padding: 10px;
+// }
+.partnersList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  border-radius: 16px;
+  border: 1px solid #434346;
+  padding: 10px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    border-radius: 55px;
+    // gap: 17px;
+    padding: 35px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    // gap: 30px;
+    padding: 30px;
+  }
+}
+
+// .partnersImgmWrp {
+//   background: #1b1b1b;
+//   border-radius: 8px;
+//   width: 136px;
+//   height: 194px;
+//   @media screen and (min-width: $breakpoint-tablet) {
+//     width: 163px;
+//     height: 238px;
+//   }
+//   @media screen and (min-width: $breakpoint-desktop) {
+//     width: 188px;
+//     height: 275px;
+//   }
+//   @media screen and (min-width: $breakpoint-desktop-small) {
+//     width: 258px;
+//     height: 388px;
+//   }
+// }
+.partnersItemImg {
+  margin: 0 auto;
+  //   padding: 8px;
+  min-width: 62px;
+  //   height: 30px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    // padding: 8px;
+    min-width: 82px;
+    // height: 38px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    // padding: 10px;
+    min-width: 122px;
+    // height: 57px;
+  }
+  @media screen and (min-width: $breakpoint-desktop-small) {
+    // padding: 12px;
+    min-width: 176px;
+    // height: 380px;
+  }
+}

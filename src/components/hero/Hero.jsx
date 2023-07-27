@@ -2,7 +2,7 @@ import style from "./Hero.module.scss";
 
 export const Hero = () => {
   return (
-    <section className={style.containerHero}>
+    <section className={style.heroContainer}>
       <h1 className={style.heroTitle}>Досвід та інновації для Вашого авто</h1>
       <p className={style.heroText}>
         Професійний сервіс автомобілів у місті Вінниці, що забезпечує

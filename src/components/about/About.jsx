@@ -2,13 +2,13 @@ import style from "./About.module.scss";
 
 export const About = () => {
   return (
-    <section className={style.containerAbout}>
+    <section className={style.aboutContainer}>
       <div>
         <p className={style.aboutPreTitle}>Хто ми є/</p>
         <h2 className={style.aboutTitle}>Про нас</h2>
         <div>
           <p className={style.aboutText}>
-            СТО "Сабарівський малярний цех" - це надійний професійний сервіс
+            СТО "Сабарівський малярний цех"- це надійний професійний сервіс
             автомобілів, розташований у місті Вінниці, спеціалізується на
             наданні високоякісних послуг з ремонту автомобілів. У нас ремонтні
             роботи проводяться з урахуванням найвищих стандартів якості.

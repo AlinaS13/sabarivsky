@@ -39,7 +39,7 @@ export const Gallery = () => {
 
   return (
     <>
-      <section className={style.containerGallery}>
+      <section className={style.galleryContainer}>
         <div>
           <p className={style.galleryPreTitle}>галерея/</p>
           <h2 className={style.galleryTitle}>Виконані роботи</h2>
@@ -156,6 +156,7 @@ export const Gallery = () => {
           <SwiperSlide>
             <video
               id="video-8"
+              className={style.videoContent}
               src="../../../src/assets/video/008.m4v"
               width="100%"
               controls
@@ -165,6 +166,7 @@ export const Gallery = () => {
           <SwiperSlide>
             <video
               id="video-9"
+              className={style.videoContent}
               src="../../../src/assets/video/009.m4v"
               width="100%"
               controls
@@ -174,6 +176,7 @@ export const Gallery = () => {
           <SwiperSlide>
             <video
               id="video-10"
+              className={style.videoContent}
               src="../../../src/assets/video/010.m4v"
               width="100%"
               controls

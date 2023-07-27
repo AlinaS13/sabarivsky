@@ -1,7 +1,7 @@
 @import "../../sass/mixins";
 @import "../../sass/variables";
 
-.servicesContainer {
+.advantagesContainer {
   margin-right: 16px;
   margin-left: 16px;
   margin-bottom: 20px;
@@ -19,7 +19,7 @@
   }
 }
 
-.servicesPreTitle {
+.advantagesPreTitle {
   color: $secondaryTextColor;
   font-family: Montserrat;
   font-size: 10px;
@@ -34,7 +34,7 @@
   @media screen and (min-width: $breakpoint-desktop) {
   }
 }
-.servicesTitle {
+.advantagesTitle {
   color: $mainTextColor;
   font-family: Montserrat;
   font-size: 20px;
@@ -50,60 +50,66 @@
   }
 }
 
-.servicesListWrp {
+.advantagesListWrp {
   display: flex;
   justify-content: center;
-}
-.servicesList {
   @media screen and (min-width: $breakpoint-tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-    gap: 32px;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}
+.advantagesList {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  overflow: hidden;
+  flex-wrap: wrap;
+  gap: 9px;
+  @media screen and (min-width: $breakpoint-tablet) {
     margin-bottom: 24px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
-    justify-content: center;
-    align-items: baseline;
-    flex-wrap: wrap;
-  }
 }
-.servicesItem {
-  position: relative;
-  background: #1b1b1b;
-  height: 132px;
-  border-radius: 16px;
-  margin-bottom: 40px;
+.advantagesItem {
+  width: calc((100% - 60px) / 2);
+  margin-bottom: 55px;
   @media screen and (min-width: $breakpoint-tablet) {
-    width: calc((100% - 60px) / 2);
-    margin-bottom: 0px;
+    width: calc((100% - 60px) / 3);
   }
-  @media screen and (min-width: $breakpoint-desktop) {
-    width: calc((100% - 65px) / 3);
-  }
-}
-.chekImg {
-  position: absolute;
-  left: 50%;
-  bottom: 60%;
-  transform: translate(-50%, -50%);
-}
-.servicesText {
-  padding-top: 40px;
-  text-align: center;
-  color: $mainTextColor;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
 }
 
-.servicesDescription {
-  text-align: center;
+.advantagesText {
   color: $mainTextColor;
   font-family: Montserrat;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 16px;
+  margin-bottom: 12px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+  }
+}
+
+.advantagesDescription {
+  color: $secondaryTextColor;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.advantagesItemImg {
+  margin-bottom: 20px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 72px;
+    height: 72px;
+  }
 }

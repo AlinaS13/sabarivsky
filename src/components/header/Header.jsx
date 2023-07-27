@@ -10,7 +10,7 @@ export const Header = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
   const [isDropdownActive, setIsDropdownActive] = useState(false);
   return (
-    <header className={style.containerHeader}>
+    <header className={style.headerContainer}>
       <img className={style.logo} src={logo} />
 
       <Dropdown

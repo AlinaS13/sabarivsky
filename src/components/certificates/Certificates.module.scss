@@ -1,0 +1,123 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.certificatesContainer {
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 60px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-right: 32px;
+    margin-left: 32px;
+    min-height: 398px;
+    margin-bottom: 100px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-right: 128px;
+    margin-left: 128px;
+    min-height: 439px;
+    margin-bottom: 128px;
+  }
+}
+
+.certificatesPreTitle {
+  color: $secondaryTextColor;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+  }
+}
+.certificatesTitle {
+  color: $mainTextColor;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 40px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-bottom: 64px;
+  }
+}
+
+// .certificatesListWrp {
+//   display: flex;
+//   justify-content: center;
+// }
+.certificatesList {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 32px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    flex-wrap: nowrap;
+    gap: 17px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    gap: 30px;
+  }
+}
+.certificatesItem {
+  width: calc((100% - 60px) / 2);
+  @media screen and (min-width: $breakpoint-tablet) {
+    // width: 163px;
+    // height: 238px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: calc((100% - 65px) / 3);
+    // width: 188px;
+    // height: 275px;
+  }
+}
+.certificatesImgmWrp {
+  background: #1b1b1b;
+  // background: red;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 0 auto;
+  @media screen and (min-width: $breakpoint-tablet) {
+    // width: calc((100% - 60px) / 2);
+    width: 150px;
+    height: 227px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    padding: 10px;
+    // width: calc((100% - 60px) / 4);
+    width: 188px;
+    height: 275px;
+  }
+  @media screen and (min-width: $breakpoint-desktop-small) {
+    padding: 12px;
+    width: 258px;
+    height: 388px;
+  }
+}
+.certificatesItemImg {
+  // margin: 0 auto;
+  width: calc((100% - 0px) / 1);
+  // height: 180px;
+  // @media screen and (min-width: $breakpoint-tablet) {
+  //   min-width: 163px;
+  //   height: 238px;
+  // }
+  @media screen and (min-width: $breakpoint-desktop) {
+    // width: calc((100% - 60px) / 4);
+    // min-width: 188px;
+    // height: 275px;
+  }
+  // @media screen and (min-width: $breakpoint-desktop-small) {
+  //   min-width: 250px;
+  //   height: 380px;
+  // }
+}
