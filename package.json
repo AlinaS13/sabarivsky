@@ -2,6 +2,7 @@
   "name": "sabarivsky",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://alinas13.github.io/sabarivsky/",
   "type": "module",
   "scripts": {
     "dev": "vite",
