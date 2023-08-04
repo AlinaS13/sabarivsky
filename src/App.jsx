@@ -9,6 +9,7 @@ import { Advantages } from "./components/advantages/Advantages";
 import { Certificates } from "./components/certificates/Certificates";
 import { Partners } from "./components/Partners/Partners";
 import { Review } from "./components/review/Review";
+import { Location } from "./components/location/Location";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Certificates />
         <Partners />
         <Review />
+        <Location />
       </BrowserRouter>
     </>
   );

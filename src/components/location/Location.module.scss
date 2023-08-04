@@ -1,0 +1,22 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.locationContainer {
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 60px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-right: 32px;
+    margin-left: 32px;
+    min-height: 398px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-right: 128px;
+    margin-left: 128px;
+    min-height: 439px;
+  }
+}
+.locationtest {
+  color: red;
+}

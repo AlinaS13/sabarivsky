@@ -1,0 +1,25 @@
+@import "../../../sass/mixins";
+@import "../../../sass/variables";
+
+.mapContainer {
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 60px;
+  width: 250;
+  height: 250;
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 350;
+    height: 350;
+    margin-right: 32px;
+    margin-left: 32px;
+    min-height: 398px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-right: 128px;
+    margin-left: 128px;
+    min-height: 439px;
+    width: 500;
+    height: 500;
+  }
+}
