@@ -14,7 +14,7 @@ import { Location } from "./components/location/Location";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/sabarivsky">
         <Header />
         <Hero />
         <About />
