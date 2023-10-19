@@ -21,11 +21,11 @@ export const About = () => {
       </div>
       <img
         className={style.aboutImg}
-        srcSet="../../../src/assets/img/about/about-300.jpg 300w, 
-        ../../../src/assets/img/about/about-600.jpg 600w, 
-        ../../src/assets/img/about/about-1200.jpg 1200w"
+        srcSet="src/assets/img/about/about-300.jpg 300w, 
+        src/assets/img/about/about-600.jpg 600w, 
+        src/assets/img/about/about-1200.jpg 1200w"
         sizes=" (min-width: 1200px) 900px,(min-width: 900px) 600px, (min-width: 600px) 300px, 100vw"
-        src="../../assets/img/about/about-300.jpg"
+        src="assets/img/about/about-300.jpg"
         alt="car"
       />
     </section>
