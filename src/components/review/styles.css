@@ -21,6 +21,10 @@
 
 .swiper-pagination {
   position: relative;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  /* margin-bottom: 20px; */
+  margin-top: 24px;
+}
+
+.notiflix-report-message {
+  text-align: center;
 }

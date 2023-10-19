@@ -1,6 +1,12 @@
+import { useState } from "react";
 import style from "./Hero.module.scss";
+import { ContactUsModal } from "../contactUsModal/ContactUsModal";
 
 export const Hero = () => {
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const openModal = () => setIsOpenModal(true);
+  const closeModal = () => setIsOpenModal(false);
   return (
     <section className={style.heroContainer}>
       <h1 className={style.heroTitle}>Досвід та інновації для Вашого авто</h1>
@@ -10,10 +16,17 @@ export const Hero = () => {
         стандартах.
       </p>
       <div className={style.heroBtnWrp}>
-        <button type="button" className={style.heroBtn}>
+        <button
+          onClick={() => openModal()}
+          type="button"
+          className={style.heroBtn}
+        >
           Зв’язатися з нами
         </button>
       </div>
+      {isOpenModal && (
+        <ContactUsModal isOpen={isOpenModal} onClose={closeModal} />
+      )}
     </section>
   );
 };

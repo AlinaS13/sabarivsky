@@ -19,8 +19,8 @@ html {
 
 body {
   position: relative;
+  color: var(--mainTextColor);
   background-color: var(--mainBgColor);
-
   min-height: 100vh;
   overflow: hidden;
   margin: 0;

@@ -39,7 +39,7 @@ export const Gallery = () => {
 
   return (
     <>
-      <section className={style.galleryContainer}>
+      <section className={style.galleryContainer} id="gallery">
         <div>
           <p className={style.galleryPreTitle}>галерея/</p>
           <h2 className={style.galleryTitle}>Виконані роботи</h2>

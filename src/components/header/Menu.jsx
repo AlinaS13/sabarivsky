@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import CrossSVG from "../../assets/svg/header/Cross";
 import style from "./Menu.module.scss";
 
@@ -22,67 +21,76 @@ const Menu = ({ setIsMenuActive, isMenuActive }) => {
         <nav>
           <ul className={style.navList}>
             <li className={style.navItem}>
-              <NavLink
+              <a
                 onClick={() => setIsMenuActive(false)}
                 className={style.navLink}
-                to="/categories/Beef"
+                href="#about"
               >
                 Про нас
-              </NavLink>
+              </a>
             </li>
             <li className={style.navItem}>
-              <NavLink
+              <a
                 onClick={() => setIsMenuActive(false)}
                 className={style.navLink}
-                to="/add"
+                href="#services"
               >
                 Послуги СТО під ключ
-              </NavLink>
+              </a>
             </li>
             <li className={style.navItem}>
-              <NavLink
+              <a
                 onClick={() => setIsMenuActive(false)}
                 className={style.navLink}
-                to="/my"
+                href="#gallery"
               >
                 Виконані роботи
-              </NavLink>
+              </a>
             </li>
             <li className={style.navItem}>
-              <NavLink
+              <a
                 onClick={() => setIsMenuActive(false)}
                 className={style.navLink}
-                to="/favorite"
+                href="#advantages"
               >
                 Наші переваги
-              </NavLink>
+              </a>
             </li>
             <li className={style.navItem}>
-              <NavLink
+              <a
                 onClick={() => setIsMenuActive(false)}
                 className={style.navLink}
-                to="/shopping-list"
+                href="#certificates"
               >
                 Сертифікати та досягнення
-              </NavLink>
+              </a>
             </li>
             <li className={style.navItem}>
-              <NavLink
+              <a
                 onClick={() => setIsMenuActive(false)}
                 className={style.navLink}
-                to="/shopping-list"
+                href="#partners"
               >
                 Наші партнери
-              </NavLink>
+              </a>
             </li>
             <li className={style.navItem}>
-              <NavLink
+              <a
                 onClick={() => setIsMenuActive(false)}
                 className={style.navLink}
-                to="/shopping-list"
+                href="#review"
               >
                 Відгуки клієнтів
-              </NavLink>
+              </a>
+            </li>
+            <li className={style.navItem}>
+              <a
+                onClick={() => setIsMenuActive(false)}
+                className={style.navLink}
+                href="#contacts"
+              >
+                Контакти
+              </a>
             </li>
           </ul>
         </nav>

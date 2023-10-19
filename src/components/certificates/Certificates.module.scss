@@ -60,7 +60,7 @@
   align-items: baseline;
   flex-wrap: wrap;
   gap: 32px;
-  width: calc((100% - 60px) / 2);
+  // width: calc((100% - 60px) / 2);
   @media screen and (min-width: $breakpoint-tablet) {
     flex-wrap: nowrap;
     gap: 17px;

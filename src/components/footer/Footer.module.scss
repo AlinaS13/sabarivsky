@@ -1,0 +1,185 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.footerContainer {
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 32px;
+    margin-left: 32px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-right: 128px;
+    margin-left: 128px;
+    gap: 20px;
+  }
+}
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: $breakpoint-tablet) {
+    gap: 68px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    gap: 108px;
+  }
+}
+.linkContainer {
+  // display: flex;
+  // justify-content: space-between;
+  // @media screen and (min-width: $breakpoint-tablet) {
+  //   display: block;
+  // }
+}
+.logo {
+  width: 60px;
+  height: 34px;
+  margin-bottom: 16px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 98px;
+    height: 55px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: 124px;
+    height: 64px;
+  }
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    gap: 8px;
+  }
+
+  a {
+    color: $secondaryTextColor;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.4;
+    @media screen and (min-width: $breakpoint-tablet) {
+      font-size: 16px;
+    }
+  }
+}
+.adressContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    gap: 108px;
+  }
+}
+.adressTitle {
+  color: $mainTextColor;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+  }
+}
+
+.contact {
+  color: $secondaryTextColor;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4;
+  &:hover,
+  &:focus {
+    color: $mainAccentColor;
+  }
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+.adressData {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    gap: 8px;
+  }
+}
+.adress {
+  color: $secondaryTextColor;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+.location {
+  color: $secondaryTextColor;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: underline;
+  &:hover,
+  &:focus {
+    color: $mainAccentColor;
+  }
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+  }
+}
+.socialWrp {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.socialIcon {
+  width: 16px;
+  height: 16px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 32px;
+    height: 32px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+  }
+}
+
+.sociallIcon {
+  width: 19px;
+  height: 19px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 40px;
+    height: 40px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+  }
+}
+
+.footerContact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+  }
+}

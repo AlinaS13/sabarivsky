@@ -8,7 +8,7 @@ import gears from "../../assets/svg/two-gears.svg";
 
 export const Advantages = () => {
   return (
-    <section className={style.advantagesContainer}>
+    <section className={style.advantagesContainer} id="advantages">
       <p className={style.advantagesPreTitle}>чому ми/</p>
       <h2 className={style.advantagesTitle}>Наші переваги</h2>
       <div className={style.advantagesListWrp}>

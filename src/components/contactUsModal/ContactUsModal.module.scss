@@ -1,0 +1,101 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(50, 198, 130, 0.2);
+  // background-color: rgba(70, 74, 79, 0.515);
+  z-index: 20;
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    top: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 20;
+  }
+}
+.modalContainer {
+  box-sizing: border-box;
+  position: relative;
+  width: 280px;
+  background-color: #1b1b1b;
+  padding: 25px;
+  z-index: 20;
+  border-radius: 8px;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    width: 490px;
+    padding: 48px 64px;
+  }
+}
+
+.modalCloseButton {
+  opacity: 0;
+  outline: none;
+  padding: 0px;
+  opacity: 1;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.2);
+    color: $mainAccentColor;
+  }
+}
+.modalCloseSvg {
+  width: 20px;
+  height: 20px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.modalTitle {
+  color: $mainTextColor;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 20px;
+  margin-bottom: 8px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+}
+.modalText {
+  color: $mainTextColor;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 28px;
+  line-height: 1.37;
+  @media screen and (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+  }
+}

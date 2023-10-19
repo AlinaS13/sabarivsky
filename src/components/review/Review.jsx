@@ -10,7 +10,7 @@ import "./styles.css";
 export const Review = () => {
   return (
     <>
-      <section className={style.reviewContainer}>
+      <section className={style.reviewContainer} id="review">
         <div>
           <p className={style.reviewPreTitle}>що про нас говорять/</p>
           <h2 className={style.reviewTitle}>Відгуки клієнтів</h2>

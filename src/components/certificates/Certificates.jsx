@@ -6,7 +6,7 @@ import certificate4 from "../../assets/img/certificates/certificate-4-2-x.png";
 
 export const Certificates = () => {
   return (
-    <section className={style.certificatesContainer}>
+    <section className={style.certificatesContainer} id="certificates">
       <p className={style.certificatesPreTitle}>Шлях до успіху/</p>
       <h2 className={style.certificatesTitle}>Сертифікати та досягнення</h2>
       <div className={style.certificatesListWrp}>

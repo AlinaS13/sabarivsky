@@ -3,7 +3,7 @@ import style from "./Services.module.scss";
 
 export const Services = () => {
   return (
-    <section className={style.servicesContainer}>
+    <section className={style.servicesContainer} id="services">
       <p className={style.servicesPreTitle}>що ми пропонуємо/</p>
       <h2 className={style.servicesTitle}>Послуги СТО під ключ</h2>
       <div className={style.servicesListWrp}>

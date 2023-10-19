@@ -6,7 +6,7 @@ import logo4 from "../../assets/svg/partners/logo-4.svg";
 import logo5 from "../../assets/svg/partners/logo-5.svg";
 export const Partners = () => {
   return (
-    <section className={style.partnersContainer}>
+    <section className={style.partnersContainer} id="partners">
       <p className={style.partnersPreTitle}>Співпраця/</p>
       <h2 className={style.partnersTitle}>Наші партнери</h2>
       <div className={style.partnersListWrp}>
