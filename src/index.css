@@ -8,6 +8,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #111111;
   /* backdrop-filter: blur(25px); */
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-x: hidden;
+  word-wrap: normal;
 }
 
 html,
@@ -25,7 +31,8 @@ p {
   margin: 0;
 }
 
-ul {
+ul,
+li {
   list-style: none;
   margin: 0;
   padding-left: 0;

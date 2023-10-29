@@ -1,5 +1,5 @@
 import style from "./Footer.module.scss";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/img/logo/logo-desk-2-x.png";
 import YouTubeSVG from "../../assets/svg/footer/YouTube";
 import InstagramSvg from "../../assets/svg/footer/Instagram";
 import FaceBookSvg from "../../assets/svg/footer/Facebook";
@@ -9,14 +9,14 @@ export const Footer = () => {
     <footer className={style.footerContainer} id="contacts">
       <img className={style.logo} src={logo} />
       <div className={style.contentContainer}>
-        <div className={style.linkContainer}>
+        <div>
           <div>
             <ul className={style.navList}>
               <li>
                 <a href="#about">Про нас</a>
               </li>
               <li>
-                <a href="#services">Послуги СТО під ключ</a>
+                <a href="#services">Послуги СТО </a>
               </li>
               <li>
                 <a href="#gallery">Виконані роботи</a>

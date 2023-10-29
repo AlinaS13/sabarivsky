@@ -2,6 +2,7 @@ import { Formik, Form, Field } from "formik";
 import styles from "./ContactUsForm.module.scss";
 import * as yup from "yup";
 import { Report } from "notiflix/build/notiflix-report-aio";
+import axios from "axios";
 const SignupSchema = yup.object().shape({
   name: yup
     .string()
@@ -23,10 +24,17 @@ const SignupSchema = yup.object().shape({
     ),
 });
 
-export const ContactUsForm = ({ onClick }) => {
+export const ContactUsForm = ({ onClick, isOpen }) => {
   const handleContactUs = (userData) => {
-    const contasts = userData;
-    console.log(contasts);
+    let message = `<b>Заявка з сайту!</b>\n`;
+    message += ` <b> Ім'я: ${userData.name} </b>\n`;
+    message += ` <b> Телефон: ${userData.phone} </b>`;
+    axios.post(import.meta.env.VITE_URI_API, {
+      chat_id: import.meta.env.VITE_CHAT_ID,
+      parse_mode: "html",
+      text: message,
+    });
+
     Report.success(
       "Дякуємо за довіру!",
       "Очікуйте дзвінка від наших фахівців",
@@ -51,7 +59,9 @@ export const ContactUsForm = ({ onClick }) => {
         },
       }
     );
-    onClick();
+    if (isOpen) {
+      onClick();
+    }
   };
   return (
     <Formik

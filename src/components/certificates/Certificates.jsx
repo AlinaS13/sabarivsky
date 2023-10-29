@@ -9,7 +9,7 @@ export const Certificates = () => {
     <section className={style.certificatesContainer} id="certificates">
       <p className={style.certificatesPreTitle}>Шлях до успіху/</p>
       <h2 className={style.certificatesTitle}>Сертифікати та досягнення</h2>
-      <div className={style.certificatesListWrp}>
+      <div>
         <ul className={style.certificatesList}>
           <li className={style.certificatesItem}>
             <div className={style.certificatesImgmWrp}>

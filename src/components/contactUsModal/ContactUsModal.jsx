@@ -36,7 +36,7 @@ export const ContactUsModal = ({ isOpen, onClose }) => {
         <p className={styles.modalText}>
           Залиште контакти - ми зв'яжемося з Вами протягом 5 хвилин!
         </p>
-        <ContactUsForm onClick={onClose} />
+        <ContactUsForm onClick={onClose} isOpen={isOpen} />
       </div>
     </div>
   );

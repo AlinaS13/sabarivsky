@@ -1,5 +1,6 @@
 import style from "./About.module.scss";
 
+import about from "../../assets/img/about.jpg";
 export const About = () => {
   return (
     <section className={style.aboutContainer} id="about">
@@ -19,15 +20,10 @@ export const About = () => {
           </p>
         </div>
       </div>
-      <img
-        className={style.aboutImg}
-        srcSet="src/assets/img/about/about-300.jpg 300w, 
-        src/assets/img/about/about-600.jpg 600w, 
-        src/assets/img/about/about-1200.jpg 1200w"
-        sizes=" (min-width: 1200px) 900px,(min-width: 900px) 600px, (min-width: 600px) 300px, 100vw"
-        src="assets/img/about/about-300.jpg"
-        alt="car"
-      />
+      <div>
+        <img className={style.aboutImg} src={about} alt="car" />
+  
+      </div>
     </section>
   );
 };

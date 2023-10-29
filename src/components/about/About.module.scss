@@ -2,14 +2,14 @@
 @import "../../sass/variables";
 
 .aboutContainer {
-  min-height: 634px;
+  // min-height: 634px;
   margin-right: 16px;
   margin-left: 16px;
   margin-bottom: 60px;
   @media screen and (min-width: $breakpoint-tablet) {
     margin-right: 32px;
     margin-left: 32px;
-    min-height: 398px;
+    // min-height: 398px;
     display: flex;
     align-items: center;
     gap: 32px;
@@ -18,7 +18,7 @@
   @media screen and (min-width: $breakpoint-desktop) {
     margin-right: 128px;
     margin-left: 128px;
-    min-height: 439px;
+    // min-height: 439px;
     gap: 64px;
     margin-bottom: 128px;
   }
@@ -71,12 +71,27 @@
   margin: 0;
   width: 100%;
   height: auto;
+  border-radius: 8px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 358px;
+    height: 350px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    min-width: 523px;
+    // min-height: 439px;
+  }
+}
+
+.aboutVideo {
+  height: 200px;
+  -o-object-fit: cover;
+  object-fit: cover;
   @media screen and (min-width: $breakpoint-tablet) {
     width: 358px;
     height: 398px;
   }
   @media screen and (min-width: $breakpoint-desktop) {
-    min-width: 523px;
-    min-height: 439px;
+    width: 523px;
+    height: 439px;
   }
 }

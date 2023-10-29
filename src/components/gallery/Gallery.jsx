@@ -3,9 +3,22 @@ import { Autoplay, FreeMode, Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import "react-tuby/css/main.css";
 
 import "../review/styles.css";
 import { useEffect, useState } from "react";
+import video1 from "../../assets/video/001.m4v";
+import video2 from "../../assets/video/002.m4v";
+import video3 from "../../assets/video/003.m4v";
+import video4 from "../../assets/video/004.m4v";
+import video5 from "../../assets/video/005.m4v";
+import video6 from "../../assets/video/006.m4v";
+import video7 from "../../assets/video/007.m4v";
+import video8 from "../../assets/video/008.m4v";
+import video9 from "../../assets/video/009.m4v";
+import video10 from "../../assets/video/010.m4v";
+import video11 from "../../assets/video/011.m4v";
+import GaleryVideo from "./GaleryVideo";
 
 export const Gallery = () => {
   const [mySwiper, setMySwiper] = useState(null);
@@ -84,104 +97,37 @@ export const Gallery = () => {
           }}
         >
           <SwiperSlide>
-            <video
-              id="video-1"
-              className={style.videoContent}
-              src="../../../src/assets/video/001.m4v"
-              width="100%"
-              controls
-              preload="auto"
-            ></video>
+            <GaleryVideo video={video1} id={video1} />
           </SwiperSlide>
           <SwiperSlide>
-            <video
-              id="video-2"
-              className={style.videoContent}
-              src="../../../src/assets/video/002.m4v"
-              width="100%"
-              controls
-              preload="auto"
-            ></video>
+            <GaleryVideo video={video2} id={video2} />
           </SwiperSlide>
           <SwiperSlide>
-            <video
-              id="video-3"
-              className={style.videoContent}
-              src="../../../src/assets/video/011.m4v"
-              width="100%"
-              controls
-              preload="auto"
-            ></video>
+            <GaleryVideo video={video3} id={video3} />
           </SwiperSlide>
           <SwiperSlide>
-            <video
-              id="video-4"
-              className={style.videoContent}
-              src="../../../src/assets/video/004.m4v"
-              width="100%"
-              controls
-              preload="auto"
-            ></video>
+            <GaleryVideo video={video4} id={video4} />
           </SwiperSlide>
           <SwiperSlide>
-            <video
-              id="video-5"
-              className={style.videoContent}
-              src="../../../src/assets/video/005.m4v"
-              width="100%"
-              controls
-              preload="auto"
-            ></video>
+            <GaleryVideo video={video5} id={video5} />
           </SwiperSlide>
           <SwiperSlide>
-            <video
-              id="video-6"
-              className={style.videoContent}
-              src="../../../src/assets/video/006.m4v"
-              width="100%"
-              controls
-              preload="auto"
-            ></video>
+            <GaleryVideo video={video6} id={video6} />
           </SwiperSlide>
           <SwiperSlide>
-            <video
-              id="video-7"
-              className={style.videoContent}
-              src="../../../src/assets/video/007.m4v"
-              width="100%"
-              controls
-              preload="auto"
-            ></video>
+            <GaleryVideo video={video7} id={video7} />
           </SwiperSlide>
           <SwiperSlide>
-            <video
-              id="video-8"
-              className={style.videoContent}
-              src="../../../src/assets/video/008.m4v"
-              width="100%"
-              controls
-              preload="auto"
-            ></video>
+            <GaleryVideo video={video8} id={video8} />
           </SwiperSlide>
           <SwiperSlide>
-            <video
-              id="video-9"
-              className={style.videoContent}
-              src="../../../src/assets/video/009.m4v"
-              width="100%"
-              controls
-              preload="auto"
-            ></video>
+            <GaleryVideo video={video9} id={video9} />
           </SwiperSlide>
           <SwiperSlide>
-            <video
-              id="video-10"
-              className={style.videoContent}
-              src="../../../src/assets/video/010.m4v"
-              width="100%"
-              controls
-              preload="auto"
-            ></video>
+            <GaleryVideo video={video10} id={video10} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <GaleryVideo video={video11} id={video11} />
           </SwiperSlide>
         </Swiper>
       </section>

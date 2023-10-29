@@ -24,6 +24,7 @@
     &:hover,
     &:focus,
     &:active {
+      border: none;
       border-bottom: 1px solid $mainAccentColor;
     }
     &::placeholder {

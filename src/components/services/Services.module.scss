@@ -1,6 +1,22 @@
 @import "../../sass/mixins";
 @import "../../sass/variables";
-
+.servicesWrp {
+  // position: relative;
+  // left: 0;
+  // top: 0;
+  // background-image: url(../../assets/img/bg-car.png);
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // overflow: hidden;
+  margin-bottom: 20px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 76px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-bottom: 88px;
+  }
+}
 .servicesContainer {
   margin-right: 16px;
   margin-left: 16px;
@@ -71,10 +87,10 @@
 }
 .servicesItem {
   position: relative;
-  background: #1b1b1b;
+  // background: #1b1b1b;
   height: 132px;
   border-radius: 16px;
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
   @media screen and (min-width: $breakpoint-tablet) {
     width: calc((100% - 60px) / 2);
     margin-bottom: 0px;

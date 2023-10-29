@@ -3,35 +3,58 @@
 
 .heroContainer {
   //   min-width: 380px;
-  height: 490px;
-  margin-bottom: 60px;
+  height: 510px;
+  // margin-bottom: 60px;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  background-image: url(../../assets/img/hero/start-mob.png);
-  @mixin retina {
-    background-image: url(../../assets/img/hero/start-mob-1-x.png);
-  }
+  background: rgba(0, 0, 0, 0.25);
+  // background-image: url(../../assets/img/hero/start-mob-1-x.png);
+  // @mixin retina {
+  //   background-image: url(../../assets/img/hero/start-mob-1-x.png);
+  // }
   @media screen and (min-width: $breakpoint-tablet) {
     // min-width: 768px;
-    min-height: 890px;
+    // min-height: 890px;
+    height: 590px;
     margin-bottom: 100px;
-    background-image: url(../../assets/img/hero/start-tab-1-x.png);
-    @mixin retina {
-      background-image: url(../../assets/img/hero/start-tab-2-x.png);
-    }
+
+    // background-image: url(../../assets/img/hero/start-tab-1-x.png);
+    // @mixin retina {
+    //   background-image: url(../../assets/img/hero/start-tab-2-x.png);
+    // }
   }
   @media screen and (min-width: $breakpoint-desktop) {
     // min-width: 1280px;
     margin-bottom: 128px;
-    min-height: 664px;
-    background-image: url(../../assets/img/hero/start-desk-1-x.png);
-    @mixin retina {
-      background-image: url(../../assets/img/hero/start-desk-2-x.png);
+    height: 664px;
+    // background-image: url(../../assets/img/hero/start-desk-1-x.png);
+    // @mixin retina {
+    //   background-image: url(../../assets/img/hero/start-desk-2-x.png);
+    // }
+  }
+}
+.heroVideoWrp {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  video {
+    width: 100%;
+    height: 75%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    @media screen and (min-width: $breakpoint-tablet) {
+      width: 100%;
+      height: 100%;
     }
   }
 }
-
 .heroTitle {
   font-family: Montserrat;
   font-size: 26px;
@@ -39,7 +62,7 @@
   line-height: 30px;
   letter-spacing: -1px;
   color: $mainTextColor;
-  padding-top: 127px;
+  padding-top: 85px;
   padding-right: 32px;
   padding-left: 32px;
   margin-bottom: 16px;
@@ -49,7 +72,7 @@
     line-height: 70px;
     letter-spacing: -2px;
 
-    padding-top: 250px;
+    padding-top: 125px;
     padding-right: 64px;
     padding-left: 64px;
     margin-bottom: 24px;

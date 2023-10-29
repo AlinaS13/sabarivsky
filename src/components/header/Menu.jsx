@@ -5,7 +5,7 @@ const Menu = ({ setIsMenuActive, isMenuActive }) => {
   return (
     <div
       className={`${style.backdrop} ${isMenuActive ? style.active : ""} ${
-        style.containerTTTTTTT
+        style.contain
       }`}
     >
       <div className={style.navWrapper}>

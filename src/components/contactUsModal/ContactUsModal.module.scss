@@ -10,8 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(50, 198, 130, 0.2);
-  // background-color: rgba(70, 74, 79, 0.515);
+  background-color: rgba(70, 74, 79, 0.515);
   z-index: 20;
   overflow: hidden;
   @media screen and (min-width: 768px) {
@@ -24,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.25);
+    // background-color: rgba(0, 0, 0, 0.25);
     z-index: 20;
   }
 }
