@@ -2,21 +2,22 @@ import { Parallax } from "react-parallax";
 import chek from "../../assets/svg/chek.svg";
 import style from "./Services.module.scss";
 import { useEffect, useState } from "react";
-// import bg from "../../assets/img/bg-car.png";
+import bgImgDesk from "../../assets/img/bg-car-4.png";
+import bgImgTab from "../../assets/img/bg-car-2.png";
+
 export const Services = () => {
-  const [bgImage, setBgImage] = useState("/src/assets/img/bg-car-4.png");
+  const [bgImage, setBgImage] = useState(bgImgDesk);
   const [bgImageHeight, setBgImageHeight] = useState("100%");
   const handleResize = () => {
     const screenWidth = window.innerWidth;
 
     if (screenWidth < 768) {
-      setBgImage("/src/assets/img/bg-mob.png");
-      setBgImageHeight("100%");
+      setBgImage(false);
     } else if (screenWidth >= 768 && screenWidth < 1024) {
-      setBgImage("/src/assets/img/bg-car-2.png");
+      setBgImage(bgImgTab);
       setBgImageHeight("auto");
     } else {
-      setBgImage("/src/assets/img/bg-car-4.png");
+      setBgImage(bgImgDesk);
       setBgImageHeight("auto");
     }
   };

@@ -5,5 +5,5 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "/sabarivsky/",
   plugins: [react()],
-  assetsInclude: ["**/*.m4v"],
+  assetsInclude: ["**/*.m4v", "**/*.mp4"],
 });

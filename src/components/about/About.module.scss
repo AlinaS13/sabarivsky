@@ -74,11 +74,9 @@
   border-radius: 8px;
   @media screen and (min-width: $breakpoint-tablet) {
     width: 358px;
-    height: 350px;
   }
   @media screen and (min-width: $breakpoint-desktop) {
     min-width: 523px;
-    // min-height: 439px;
   }
 }
 

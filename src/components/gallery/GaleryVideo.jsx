@@ -7,7 +7,7 @@ export default function GaleryVideo(props) {
   });
   return (
     <video
-      className={style.videoContent}
+      className={style.galleryContent}
       id={props.id}
       ref={videoRef}
       width="100%"

@@ -4,24 +4,26 @@ import logo2 from "../../assets/svg/partners/logo-2.svg";
 import logo3 from "../../assets/svg/partners/logo-3.svg";
 import logo4 from "../../assets/svg/partners/logo-4.svg";
 import logo5 from "../../assets/svg/partners/logo-5.svg";
+import tas from "../../assets/svg/partners/tas.svg";
 
 import { Parallax } from "react-parallax";
 import { useEffect, useState } from "react";
+import bgImgDesk from "../../assets/img/bg-car-4.png";
+import bgImgTab from "../../assets/img/bg-car-2.png";
 
 export const Partners = () => {
-  const [bgImage, setBgImage] = useState("/src/assets/img/bg-car-4.png");
+  const [bgImage, setBgImage] = useState(bgImgDesk);
   const [bgImageHeight, setBgImageHeight] = useState("100%");
   const handleResize = () => {
     const screenWidth = window.innerWidth;
 
     if (screenWidth < 768) {
-      setBgImage("/src/assets/img/bg-mob.png");
-      setBgImageHeight("auto");
+      setBgImage(false);
     } else if (screenWidth >= 768 && screenWidth < 1024) {
-      setBgImage("/src/assets/img/bg-car-2.png");
+      setBgImage(bgImgTab);
       setBgImageHeight("auto");
     } else {
-      setBgImage("/src/assets/img/bg-car-4.png");
+      setBgImage(bgImgDesk);
       setBgImageHeight("auto");
     }
   };
@@ -56,6 +58,13 @@ export const Partners = () => {
             </li>
             <li className={style.partnersItem}>
               <img className={style.partnersItemImg} src={logo3}></img>
+            </li>
+            <li className={style.partnersItem}>
+              <img
+                className={style.partnersItemImg}
+                src={tas}
+                style={{ minWidth: "125px" }}
+              ></img>
             </li>
             <li className={style.partnersItem}>
               <img className={style.partnersItemImg} src={logo4}></img>

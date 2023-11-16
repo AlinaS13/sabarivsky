@@ -1,34 +1,13 @@
 @import "../../../sass/mixins";
 @import "../../../sass/variables";
 
-// .mapContainer {
-//   margin-right: 16px;
-//   margin-left: 16px;
-//   margin-bottom: 60px;
-//   width: 250px;
-//   height: 250px;
-//   @media screen and (min-width: $breakpoint-tablet) {
-//     width: 350px;
-//     height: 350px;
-//     margin-right: 32px;
-//     margin-left: 32px;
-//     min-height: 398px;
-//     margin-bottom: 0px;
-//   }
-//   @media screen and (min-width: $breakpoint-desktop) {
-//     margin-right: 128px;
-//     margin-left: 128px;
-//     min-height: 439px;
-//     width: 500px;
-//     height: 500px;
-//   }
-// }
-
 .mapIframe {
   margin: 0 auto;
   width: 100%;
   min-height: 314px;
   margin-bottom: 24px;
+  border-radius: 16px;
+  border: 1px solid transparent;
   filter: invert(90%) grayscale(1) hue-rotate(180deg);
   @media screen and (min-width: $breakpoint-tablet) {
     min-height: 378px;

@@ -1,6 +1,6 @@
 import style from "./About.module.scss";
 
-import about from "../../assets/img/about.jpg";
+import about from "../../assets/img/photo-team.jpg";
 export const About = () => {
   return (
     <section className={style.aboutContainer} id="about">
@@ -22,7 +22,6 @@ export const About = () => {
       </div>
       <div>
         <img className={style.aboutImg} src={about} alt="car" />
-  
       </div>
     </section>
   );

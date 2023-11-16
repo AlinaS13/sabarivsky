@@ -87,11 +87,15 @@
 }
 .servicesItem {
   position: relative;
-  // background: #1b1b1b;
+  background: rgba(70, 74, 79, 0.515);
   height: 132px;
   border-radius: 16px;
-  // margin-bottom: 40px;
+  margin-bottom: 40px;
+  &:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
   @media screen and (min-width: $breakpoint-tablet) {
+    // background: transparent;
     width: calc((100% - 60px) / 2);
     margin-bottom: 0px;
   }

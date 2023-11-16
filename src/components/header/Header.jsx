@@ -6,7 +6,6 @@ import { useState } from "react";
 import Dropdown from "./Dropdown";
 import Menu from "./Menu";
 import { FaMapLocationDot } from "react-icons/fa6";
-import LocationSVG from "../../assets/svg/Location";
 
 export const Header = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
@@ -35,7 +34,6 @@ export const Header = () => {
           rel="noopener noreferrer nofollow"
         >
           <FaMapLocationDot color="#DFFF00" className={style.svgLocation} />
-          {/* <LocationSVG /> */}
         </a>
         <button
           type="button"
@@ -59,7 +57,17 @@ export const Header = () => {
           </a>
         </li>
         <li>
-          <FaMapLocationDot color="#DFFF00" className={style.svgLocationTab} />
+          <a
+            className={style.location}
+            href="https://maps.app.goo.gl/3oj5fnEfjQmqMSfY8"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <FaMapLocationDot
+              color="#DFFF00"
+              className={style.svgLocationTab}
+            />
+          </a>
         </li>
       </ul>
     </header>

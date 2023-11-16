@@ -18,6 +18,9 @@ export const Footer = () => {
               <li>
                 <a href="#services">Послуги СТО </a>
               </li>
+              <li className={style.navItem}>
+                <a href="#car">Авто з США під ключ</a>
+              </li>
               <li>
                 <a href="#gallery">Виконані роботи</a>
               </li>
@@ -41,6 +44,7 @@ export const Footer = () => {
             <p className={style.adressTitle}>Адреса:</p>
             <div className={style.adressData}>
               <p className={style.adress}>Вінниця, пров.Вишневий 5А</p>
+
               <a
                 className={style.location}
                 href="https://maps.app.goo.gl/3oj5fnEfjQmqMSfY8"
@@ -50,7 +54,12 @@ export const Footer = () => {
                 Дивитись на мапі
               </a>
             </div>
+            <div className={style.workSchedule}>
+              <p>Пн-пт: 09:00 - 18:00</p>
+              <p>Сб-нд: Вихідний</p>
+            </div>
           </div>
+
           <div>
             <p className={style.adressTitle}>Контакти:</p>
             <ul className={style.footerContact}>

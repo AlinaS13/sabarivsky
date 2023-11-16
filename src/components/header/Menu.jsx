@@ -42,6 +42,15 @@ const Menu = ({ setIsMenuActive, isMenuActive }) => {
               <a
                 onClick={() => setIsMenuActive(false)}
                 className={style.navLink}
+                href="#car"
+              >
+                Авто з США під ключ
+              </a>
+            </li>
+            <li className={style.navItem}>
+              <a
+                onClick={() => setIsMenuActive(false)}
+                className={style.navLink}
                 href="#gallery"
               >
                 Виконані роботи

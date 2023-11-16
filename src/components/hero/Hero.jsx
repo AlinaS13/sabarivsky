@@ -11,9 +11,13 @@ export const Hero = () => {
   return (
     <section className={style.heroContainer}>
       <div className={style.heroVideoWrp}>
-        <AutoPlaySilentVideo video={main} />
+        <AutoPlaySilentVideo video={main} id="video-main" />
       </div>
-      <h1 className={style.heroTitle}>Досвід та інновації для Вашого авто</h1>
+      <h1 className={style.heroTitle}>
+        Станція кузовного ремонту
+        <br />
+        Комплексне СТО
+      </h1>
       <p className={style.heroText}>
         Професійний сервіс автомобілів у місті Вінниці, що забезпечує
         високоякісні послуги з ремонту кузова та фарбування в автомобільних
