@@ -1,0 +1,51 @@
+.locationContainer {
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .locationContainer {
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-bottom: 128px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .locationContainer {
+    display: flex;
+    gap: 64px;
+    justify-content: space-between;
+    margin-right: 128px;
+    margin-left: 128px;
+  }
+}
+
+.locationTitle {
+  color: #fafaf8;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .locationTitle {
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+}
+
+.locationText {
+  color: #fafaf8;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 28px;
+  line-height: 1.37;
+}
+@media screen and (min-width: 768px) {
+  .locationText {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+}/*# sourceMappingURL=Location.module.css.map */

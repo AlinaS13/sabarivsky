@@ -1,0 +1,121 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+@media screen and (min-width: 768px) {
+  .headerContainer {
+    padding: 16px 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .headerContainer {
+    padding: 10px 128px;
+  }
+}
+
+.logo {
+  width: 60px;
+  height: 34px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 98px;
+    height: 55px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    width: 124px;
+    height: 64px;
+  }
+}
+
+.burgerMenuBtn {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+@media screen and (min-width: 768px) {
+  .burgerMenuBtn {
+    display: none;
+  }
+}
+
+.headerContact {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .headerContact {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+}
+
+.headerTel {
+  color: #fafaf8;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 10px;
+  border: 1px solid #a3a3a3;
+  padding: 8px 14px;
+}
+.headerTel:hover, .headerTel:focus, .headerTel:active {
+  color: #dfff00;
+  border-color: #dfff00;
+  box-shadow: 0 0 10px 0 #dfff00 inset, 0 0 20px 2px #dfff00;
+}
+
+.headerMobileContact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media screen and (min-width: 768px) {
+  .headerMobileContact {
+    display: none;
+  }
+}
+
+.headerMobileTel {
+  color: #fafaf8;
+  font-weight: 400;
+  font-size: 10px;
+}
+.headerMobileTel:hover, .headerMobileTel:focus, .headerMobileTel:active {
+  color: #dfff00;
+}
+
+.headerContainerBox {
+  display: flex;
+  gap: 12px;
+}
+
+.svgLocation {
+  width: 24px;
+  height: 24px;
+}
+@media screen and (min-width: 768px) {
+  .svgLocation {
+    display: none;
+  }
+}
+.svgLocation:hover, .svgLocation:focus, .svgLocation:active {
+  transform: scale(1.2);
+}
+
+.svgLocationTab {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .svgLocationTab {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+}
+.svgLocationTab:hover, .svgLocationTab:focus, .svgLocationTab:active {
+  transform: scale(1.2);
+}/*# sourceMappingURL=Header.module.css.map */

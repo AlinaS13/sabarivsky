@@ -23,36 +23,6 @@
   width: calc((100% - ($count - 1) * $gap) / $count);
 }
 
-// //Шаблонні
-
-// @mixin mobile {
-//   @media screen and (min-width: 320px) {
-//     @content;
-//   }
-// }
-// @mixin tablet {
-//   @media screen and (min-width: 768px) {
-//     @content;
-//   }
-// }
-// @mixin lessTablet {
-//   @media screen and (max-width: 767px) {
-//     @content;
-//   }
-// }
-
-// @mixin desktop {
-//   @media screen and (min-width: 1200px) {
-//     @content;
-//   }
-// }
-
-// @mixin lessDesktop {
-//   @media screen and (max-width: 1439px) {
-//     @content;
-//   }
-// }
-
 @mixin retina {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -60,7 +30,6 @@
     @content;
   }
 }
-// З налаштуванням
 
 @mixin media($size) {
   @media screen and (min-width: ($size + px)) {
@@ -69,12 +38,6 @@
 }
 
 $breakpoint-mobile-xs: 320px;
-// $breakpoint-mobile: 375px;
-// $breakpoint-mobile-horizontal: 580px;
 $breakpoint-tablet: 768px;
-// $breakpoint-tablet-horizontal: 1024px;
 $breakpoint-desktop: 1200px;
 $breakpoint-desktop-small: 1400px;
-// $breakpoint-desktop-wide: 1600px;
-// $breakpoint-desktop-wide-xl: 1920px;
-// $contentMaxWidth: 1280px;

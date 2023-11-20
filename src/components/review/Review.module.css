@@ -1,17 +1,18 @@
-@import "../../sass/mixins";
-@import "../../sass/variables";
-
 .reviewContainer {
   margin-right: 16px;
   margin-left: 16px;
   margin-bottom: 60px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .reviewContainer {
     margin-right: 32px;
     margin-left: 32px;
     min-height: 398px;
     margin-bottom: 100px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .reviewContainer {
     margin-right: 128px;
     margin-left: 128px;
     min-height: 439px;
@@ -20,26 +21,31 @@
 }
 
 .reviewPreTitle {
-  color: $secondaryTextColor;
+  color: #a3a3a3;
   font-family: Montserrat;
   font-size: 10px;
   font-weight: 500;
   line-height: 12px;
   text-transform: uppercase;
   margin-bottom: 6px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .reviewPreTitle {
     font-size: 14px;
     line-height: 18px;
   }
 }
+
 .reviewTitle {
-  color: $mainTextColor;
+  color: #fafaf8;
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 24px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .reviewTitle {
     font-size: 40px;
     line-height: 44px;
     margin-bottom: 76px;
@@ -53,13 +59,17 @@
   border-radius: 16px;
   padding: 18px;
   margin-bottom: 40px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .reviewItem {
     padding: 24px;
     height: 242px;
     width: 375px;
     margin-bottom: 0px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .reviewItem {
     width: 325px;
   }
 }
@@ -71,7 +81,7 @@
 
 .clientName {
   text-align: left;
-  color: $mainTextColor;
+  color: #fafaf8;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 700;
@@ -82,9 +92,9 @@
 .clientReview {
   margin-bottom: 20px;
   text-align: left;
-  color: $secondaryTextColor;
+  color: #a3a3a3;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-}
+}/*# sourceMappingURL=Review.module.css.map */

@@ -1,0 +1,86 @@
+.contactUscontactUsFieldWrp {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.contactUscontactUsFieldWrp input {
+  padding: 4px 8px;
+  position: relative;
+  color: #fff;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 248, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .contactUscontactUsFieldWrp input {
+    padding: 16px 8px;
+  }
+}
+.contactUscontactUsFieldWrp input:hover, .contactUscontactUsFieldWrp input:focus, .contactUscontactUsFieldWrp input:active {
+  border: none;
+  border-bottom: 1px solid #dfff00;
+}
+.contactUscontactUsFieldWrp input::-moz-placeholder {
+  color: #a3a3a3;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+.contactUscontactUsFieldWrp input::placeholder {
+  color: #a3a3a3;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+@media screen and (min-width: 768px) {
+  .contactUscontactUsFieldWrp input::-moz-placeholder {
+    font-size: 14px;
+  }
+  .contactUscontactUsFieldWrp input::placeholder {
+    font-size: 14px;
+  }
+}
+
+.contactUsSubmitBtn {
+  width: 100%;
+  font-family: Montserrat;
+  outline: transparent;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #141416;
+  background-color: #dfff00;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.contactUsSubmitBtn:hover, .contactUsSubmitBtn:focus, .contactUsSubmitBtn:active {
+  color: #fff;
+  box-shadow: 0 0 10px 0 #dfff00 inset, 0 0 20px 2px #dfff00;
+  border: 1px solid #dfff00;
+}
+@media screen and (min-width: 768px) {
+  .contactUsSubmitBtn {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 32px;
+  }
+}
+
+.errorMessage {
+  position: absolute;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #e74a3b;
+}
+@media screen and (min-width: 768px) {
+  .errorMessage {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}/*# sourceMappingURL=ContactUsForm.module.css.map */

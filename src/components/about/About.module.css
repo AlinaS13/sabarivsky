@@ -1,80 +1,89 @@
-@import "../../sass/mixins";
-@import "../../sass/variables";
-
 .aboutContainer {
   margin-right: 16px;
   margin-left: 16px;
   margin-bottom: 60px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .aboutContainer {
     margin-right: 32px;
     margin-left: 32px;
-
     display: flex;
     align-items: center;
     gap: 32px;
     margin-bottom: 100px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .aboutContainer {
     margin-right: 128px;
     margin-left: 128px;
-
     gap: 64px;
     margin-bottom: 128px;
   }
 }
 
 .aboutPreTitle {
-  color: $secondaryTextColor;
+  color: #a3a3a3;
   font-size: 10px;
   font-weight: 500;
   line-height: 12px;
   text-transform: uppercase;
   margin-bottom: 6px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .aboutPreTitle {
     font-size: 14px;
     line-height: 18px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
-  }
 }
 .aboutTitle {
-  color: $mainTextColor;
+  color: #fafaf8;
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 24px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .aboutTitle {
     font-size: 40px;
     line-height: 44px;
   }
 }
+
 .aboutText {
-  color: $mainTextColor;
+  color: #fafaf8;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  &:first-of-type {
-    margin-bottom: 16px;
-  }
-  &:last-of-type {
-    margin-bottom: 24px;
-  }
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+.aboutText:first-of-type {
+  margin-bottom: 16px;
+}
+.aboutText:last-of-type {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .aboutText {
     font-size: 16px;
     line-height: 24px;
   }
 }
+
 .aboutImg {
   margin: 0;
   width: 100%;
   height: auto;
   border-radius: 8px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .aboutImg {
     width: 358px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .aboutImg {
     min-width: 523px;
   }
 }
@@ -83,12 +92,16 @@
   height: 200px;
   -o-object-fit: cover;
   object-fit: cover;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .aboutVideo {
     width: 358px;
     height: 398px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .aboutVideo {
     width: 523px;
     height: 439px;
   }
-}
+}/*# sourceMappingURL=About.module.css.map */

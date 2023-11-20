@@ -1,25 +1,32 @@
-@import "../../sass/mixins";
-@import "../../sass/variables";
 .servicesWrp {
   margin-bottom: 20px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .servicesWrp {
     margin-bottom: 76px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .servicesWrp {
     margin-bottom: 88px;
   }
 }
+
 .servicesContainer {
   margin-right: 16px;
   margin-left: 16px;
   margin-bottom: 20px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .servicesContainer {
     margin-right: 32px;
     margin-left: 32px;
     min-height: 398px;
     margin-bottom: 76px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .servicesContainer {
     margin-right: 128px;
     margin-left: 128px;
     min-height: 439px;
@@ -28,32 +35,36 @@
 }
 
 .servicesPreTitle {
-  color: $secondaryTextColor;
+  color: #a3a3a3;
   font-family: Montserrat;
   font-size: 10px;
   font-weight: 500;
   line-height: 12px;
   text-transform: uppercase;
   margin-bottom: 6px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .servicesPreTitle {
     font-size: 14px;
     line-height: 18px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
-  }
 }
 .servicesTitle {
-  color: $mainTextColor;
+  color: #fafaf8;
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 40px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .servicesTitle {
     font-size: 40px;
     line-height: 44px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .servicesTitle {
     margin-bottom: 64px;
   }
 }
@@ -62,8 +73,9 @@
   display: flex;
   justify-content: center;
 }
-.servicesList {
-  @media screen and (min-width: $breakpoint-tablet) {
+
+@media screen and (min-width: 768px) {
+  .servicesList {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -71,39 +83,48 @@
     gap: 32px;
     margin-bottom: 24px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .servicesList {
     justify-content: center;
     align-items: baseline;
     flex-wrap: wrap;
   }
 }
+
 .servicesItem {
   position: relative;
   background: rgba(70, 74, 79, 0.515);
   height: 132px;
   border-radius: 16px;
   margin-bottom: 40px;
-  &:nth-last-of-type(1) {
-    margin-bottom: 0;
-  }
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+.servicesItem:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .servicesItem {
     width: calc((100% - 60px) / 2);
     margin-bottom: 0px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .servicesItem {
     width: calc((100% - 65px) / 3);
   }
 }
+
 .chekImg {
   position: absolute;
   left: 50%;
   bottom: 60%;
   transform: translate(-50%, -50%);
 }
+
 .servicesText {
   padding-top: 40px;
   text-align: center;
-  color: $mainTextColor;
+  color: #fafaf8;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -111,8 +132,8 @@
 
 .servicesDescription {
   text-align: center;
-  color: $mainTextColor;
+  color: #fafaf8;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-}
+}/*# sourceMappingURL=Services.module.css.map */

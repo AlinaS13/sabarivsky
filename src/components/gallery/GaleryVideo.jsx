@@ -13,11 +13,8 @@ export default function GaleryVideo(props) {
       width="100%"
       controls
       preload="metadata"
-      //   poster=""
-      //   preload="auto"
       muted
       loop
-      //   autoPlay
       playsInline
     >
       <source src={props.video} type="video/mp4" />

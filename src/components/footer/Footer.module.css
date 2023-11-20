@@ -1,0 +1,225 @@
+.footerContainer {
+  margin-right: 16px;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 32px;
+    margin-left: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footerContainer {
+    margin-right: 128px;
+    margin-left: 128px;
+    gap: 20px;
+  }
+}
+
+.contentContainer {
+  margin-bottom: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .contentContainer {
+    gap: 68px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contentContainer {
+    gap: 108px;
+    margin-bottom: 64px;
+  }
+}
+
+.logo {
+  width: 60px;
+  height: 34px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 98px;
+    height: 55px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    width: 124px;
+    height: 64px;
+  }
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+@media screen and (min-width: 768px) {
+  .navList {
+    gap: 8px;
+  }
+}
+.navList a {
+  color: #a3a3a3;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.navList a:hover, .navList a:focus, .navList a:active {
+  color: #dfff00;
+}
+@media screen and (min-width: 768px) {
+  .navList a {
+    font-size: 16px;
+  }
+}
+
+.adressContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .adressContainer {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .adressContainer {
+    gap: 108px;
+  }
+}
+
+.adressTitle {
+  color: #fafaf8;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .adressTitle {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+}
+.contact {
+  color: #a3a3a3;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.contact:hover, .contact:focus {
+  color: #dfff00;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.adressData {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .adressData {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+}
+
+.adress {
+  color: #a3a3a3;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .adress {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.location {
+  color: #a3a3a3;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: underline;
+}
+.location:hover, .location:focus {
+  color: #dfff00;
+}
+@media screen and (min-width: 768px) {
+  .location {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+.socialWrp {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.socialIcon {
+  width: 22px;
+  height: 22px;
+}
+.socialIcon:hover, .socialIcon:focus {
+  transform: scale(1.2);
+}
+@media screen and (min-width: 768px) {
+  .socialIcon {
+    width: 32px;
+    height: 32px;
+  }
+}
+.sociallIcon {
+  width: 27px;
+  height: 27px;
+}
+.sociallIcon:hover, .sociallIcon:focus {
+  transform: scale(1.2);
+}
+@media screen and (min-width: 768px) {
+  .sociallIcon {
+    width: 40px;
+    height: 40px;
+  }
+}
+.footerContact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+.workSchedule {
+  color: #a3a3a3;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .workSchedule {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}/*# sourceMappingURL=Footer.module.css.map */

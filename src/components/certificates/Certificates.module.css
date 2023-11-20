@@ -1,17 +1,18 @@
-@import "../../sass/mixins";
-@import "../../sass/variables";
-
 .certificatesContainer {
   margin-right: 16px;
   margin-left: 16px;
   margin-bottom: 60px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .certificatesContainer {
     margin-right: 32px;
     margin-left: 32px;
     min-height: 398px;
     margin-bottom: 100px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .certificatesContainer {
     margin-right: 128px;
     margin-left: 128px;
     min-height: 439px;
@@ -20,32 +21,36 @@
 }
 
 .certificatesPreTitle {
-  color: $secondaryTextColor;
+  color: #a3a3a3;
   font-family: Montserrat;
   font-size: 10px;
   font-weight: 500;
   line-height: 12px;
   text-transform: uppercase;
   margin-bottom: 6px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .certificatesPreTitle {
     font-size: 14px;
     line-height: 18px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
-  }
 }
 .certificatesTitle {
-  color: $mainTextColor;
+  color: #fafaf8;
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 40px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .certificatesTitle {
     font-size: 40px;
     line-height: 44px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .certificatesTitle {
     margin-bottom: 64px;
   }
 }
@@ -56,44 +61,55 @@
   align-items: baseline;
   flex-wrap: wrap;
   gap: 32px;
-
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .certificatesList {
     flex-wrap: nowrap;
     gap: 17px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .certificatesList {
     gap: 30px;
   }
 }
+
 .certificatesItem {
   width: calc((100% - 60px) / 2);
-  @media screen and (min-width: $breakpoint-tablet) {
-  }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .certificatesItem {
     width: calc((100% - 65px) / 3);
   }
 }
+
 .certificatesImgmWrp {
   background: #1b1b1b;
   border-radius: 8px;
   padding: 8px;
   margin: 0 auto;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .certificatesImgmWrp {
     width: 150px;
     height: 227px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .certificatesImgmWrp {
     padding: 10px;
-
     width: 188px;
     height: 275px;
   }
-  @media screen and (min-width: $breakpoint-desktop-small) {
+}
+@media screen and (min-width: 1400px) {
+  .certificatesImgmWrp {
     padding: 12px;
     width: 258px;
     height: 388px;
   }
 }
+
 .certificatesItemImg {
   width: calc((100% - 0px) / 1);
-}
+}/*# sourceMappingURL=Certificates.module.css.map */

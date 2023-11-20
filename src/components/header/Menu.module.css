@@ -1,12 +1,29 @@
-@import "../../../src/sass/variables";
-@import "../../sass/mixins";
-@import "../../sass/container";
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
 
 .cross {
   background-color: transparent;
   border: 0;
   padding: 0;
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .cross {
     display: none;
   }
 }
@@ -17,6 +34,7 @@
   padding-top: 12px;
   padding-right: 16px;
 }
+
 .backdrop {
   z-index: 1;
   position: fixed;
@@ -27,19 +45,18 @@
   background-image: url(../../assets/img/bg-mob.png);
   background-color: rgba(70, 74, 79, 0.515);
   background-size: cover;
-
   overflow: hidden;
   transform: translateX(-100%);
   transition: transform 200ms linear;
-  &::after {
-    z-index: -1;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 320px;
-    height: 343px;
-    content: "";
-  }
+}
+.backdrop::after {
+  z-index: -1;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 320px;
+  height: 343px;
+  content: "";
 }
 
 .backdrop.active {
@@ -55,11 +72,11 @@
 
 .navItem {
   margin-bottom: 8px;
-  &:last-child {
-    margin-bottom: 0;
-    margin-right: auto;
-    margin-left: auto;
-  }
+}
+.navItem:last-child {
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .navLink {
@@ -67,15 +84,13 @@
   font-size: 12px;
   line-height: 1.47;
   letter-spacing: -0.02em;
-  color: $secondaryTextColor;
-  &:hover,
-  &:focus,
-  &:active {
-    color: $mainAccentColor;
-  }
+  color: #a3a3a3;
+}
+.navLink:hover, .navLink:focus, .navLink:active {
+  color: #dfff00;
 }
 
 .active {
-  color: $mainAccentColor;
+  color: #dfff00;
   font-weight: 400;
-}
+}/*# sourceMappingURL=Menu.module.css.map */

@@ -1,0 +1,132 @@
+.advantagesContainer {
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .advantagesContainer {
+    margin-right: 32px;
+    margin-left: 32px;
+    min-height: 398px;
+    margin-bottom: 76px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantagesContainer {
+    margin-right: 128px;
+    margin-left: 128px;
+    min-height: 439px;
+    margin-bottom: 88px;
+  }
+}
+
+.advantagesPreTitle {
+  color: #a3a3a3;
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+@media screen and (min-width: 768px) {
+  .advantagesPreTitle {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.advantagesTitle {
+  color: #fafaf8;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .advantagesTitle {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantagesTitle {
+    margin-bottom: 64px;
+  }
+}
+
+.advantagesListWrp {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .advantagesListWrp {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}
+
+.advantagesList {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  overflow: hidden;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+@media screen and (min-width: 768px) {
+  .advantagesList {
+    margin-bottom: 24px;
+  }
+}
+
+.advantagesItem {
+  width: calc((100% - 60px) / 2);
+  margin-bottom: 55px;
+}
+@media screen and (min-width: 768px) {
+  .advantagesItem {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+.advantagesText {
+  color: #fafaf8;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .advantagesText {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+}
+.advantagesDescription {
+  color: #a3a3a3;
+  font-family: Montserrat;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 12px;
+}
+@media screen and (min-width: 768px) {
+  .advantagesDescription {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.advantagesItemImg {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .advantagesItemImg {
+    width: 72px;
+    height: 72px;
+  }
+}/*# sourceMappingURL=Advantages.module.css.map */

@@ -1,17 +1,18 @@
-@import "../../sass/mixins";
-@import "../../sass/variables";
-
 .partnersContainer {
   margin-right: 16px;
   margin-left: 16px;
   margin-bottom: 60px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .partnersContainer {
     margin-right: 32px;
     margin-left: 32px;
     min-height: 398px;
     margin-bottom: 0px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .partnersContainer {
     margin-right: 128px;
     margin-left: 128px;
     min-height: 439px;
@@ -19,32 +20,36 @@
 }
 
 .partnersPreTitle {
-  color: $secondaryTextColor;
+  color: #a3a3a3;
   font-family: Montserrat;
   font-size: 10px;
   font-weight: 500;
   line-height: 12px;
   text-transform: uppercase;
   margin-bottom: 6px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .partnersPreTitle {
     font-size: 14px;
     line-height: 18px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
-  }
 }
 .partnersTitle {
-  color: $mainTextColor;
+  color: #fafaf8;
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 24px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .partnersTitle {
     font-size: 40px;
     line-height: 44px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .partnersTitle {
     margin-bottom: 64px;
   }
 }
@@ -59,28 +64,35 @@
   border-radius: 16px;
   border: 1px solid #434346;
   padding: 10px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .partnersList {
     border-radius: 55px;
-
     padding: 35px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .partnersList {
     padding: 30px;
   }
 }
 
 .partnersItemImg {
   margin: 0 auto;
-
   min-width: 62px;
-
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .partnersItemImg {
     min-width: 82px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .partnersItemImg {
     min-width: 122px;
   }
-  @media screen and (min-width: $breakpoint-desktop-small) {
+}
+@media screen and (min-width: 1400px) {
+  .partnersItemImg {
     min-width: 176px;
   }
-}
+}/*# sourceMappingURL=Partners.module.css.map */

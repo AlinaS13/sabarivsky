@@ -1,17 +1,18 @@
-@import "../../sass/mixins";
-@import "../../sass/variables";
-
 .carContainer {
   margin-right: 16px;
   margin-left: 16px;
   margin-bottom: 60px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .carContainer {
     margin-right: 32px;
     margin-left: 32px;
     min-height: 398px;
     margin-bottom: 100px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .carContainer {
     margin-right: 128px;
     margin-left: 128px;
     min-height: 439px;
@@ -20,50 +21,60 @@
 }
 
 .carPreTitle {
-  color: $secondaryTextColor;
+  color: #a3a3a3;
   font-family: Montserrat;
   font-size: 10px;
   font-weight: 500;
   line-height: 12px;
   text-transform: uppercase;
   margin-bottom: 6px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .carPreTitle {
     font-size: 14px;
     line-height: 18px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
-  }
 }
 .carTitle {
-  color: $mainTextColor;
+  color: #fafaf8;
   font-family: Montserrat;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 40px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .carTitle {
     font-size: 40px;
     line-height: 44px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .carTitle {
     margin-bottom: 74px;
   }
 }
+
 .auctionTitle {
-  color: $mainTextColor;
+  color: #fafaf8;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
   margin-bottom: 12px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .auctionTitle {
     font-size: 20px;
     line-height: 44px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .auctionTitle {
     margin-bottom: 30px;
   }
 }
+
 .auctionList {
   display: flex;
   align-items: center;
@@ -73,22 +84,27 @@
   border-radius: 16px;
   border: 1px solid #434346;
   padding: 10px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .auctionList {
     border-radius: 55px;
   }
-  @media screen and (min-width: $breakpoint-desktop) {
+}
+@media screen and (min-width: 1200px) {
+  .auctionList {
     padding: 20px;
   }
 }
+
 .auctionItemImgFs {
   width: 100px;
   height: 50px;
-  // padding-top: 15px;
-  &:hover,
-  &:focus {
-    transform: scale(1.2);
-  }
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+.auctionItemImgFs:hover, .auctionItemImgFs:focus {
+  transform: scale(1.2);
+}
+@media screen and (min-width: 768px) {
+  .auctionItemImgFs {
     padding-top: 0;
     width: 257px;
     height: auto;
@@ -97,25 +113,25 @@
 
 .auctionItemImgSc {
   width: 70px;
-  &:hover,
-  &:focus {
-    transform: scale(1.2);
-  }
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+.auctionItemImgSc:hover, .auctionItemImgSc:focus {
+  transform: scale(1.2);
+}
+@media screen and (min-width: 768px) {
+  .auctionItemImgSc {
     width: 120px;
     padding-top: 0;
-  }
-  @media screen and (min-width: $breakpoint-desktop) {
   }
 }
 .auctionItemImgTr {
   width: 100px;
   height: 50px;
-  &:hover,
-  &:focus {
-    transform: scale(1.2);
-  }
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+.auctionItemImgTr:hover, .auctionItemImgTr:focus {
+  transform: scale(1.2);
+}
+@media screen and (min-width: 768px) {
+  .auctionItemImgTr {
     width: 200px;
     height: 100px;
   }
@@ -125,21 +141,26 @@
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .advantagesListWrp {
     margin-bottom: 40px;
   }
 }
+
 .advantagesList {
   display: flex;
-
   overflow: hidden;
   flex-wrap: wrap;
   gap: 10px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .advantagesList {
     gap: 30px;
     margin-bottom: 34px;
   }
 }
+
 .advantagesItemWrp {
   display: flex;
   gap: 8px;
@@ -148,34 +169,40 @@
 }
 
 .advantagesText {
-  color: $mainTextColor;
+  color: #fafaf8;
   font-family: Montserrat;
   text-transform: uppercase;
   overflow-wrap: break-word;
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
-
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .advantagesText {
     font-size: 16px;
     line-height: 24px;
   }
 }
 
 .advantagesDescription {
-  color: $secondaryTextColor;
+  color: #a3a3a3;
   font-family: Montserrat;
   font-size: 11px;
   font-weight: 400;
   line-height: 12px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .advantagesDescription {
     font-size: 14px;
     line-height: 18px;
   }
 }
+
 .advantagesItemImg {
   margin-bottom: 20px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .advantagesItemImg {
     width: 72px;
     height: 72px;
   }
@@ -184,61 +211,74 @@
 .advantagesSvg {
   width: 24px;
   height: 24px;
-  &:hover {
-    transition: all 0.65s;
-    transform: rotateY(360deg);
-  }
 }
+.advantagesSvg:hover {
+  transition: all 0.65s;
+  transform: rotateY(360deg);
+}
+
 .contactContainer {
   display: flex;
   gap: 40px;
   flex-direction: column;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .contactContainer {
     flex-direction: row;
     justify-content: space-between;
   }
-  h2 {
-    color: $mainTextColor;
-    font-weight: 500;
-    font-size: 12px;
-    margin-bottom: 18px;
-    line-height: 1.37;
-    @media screen and (min-width: $breakpoint-tablet) {
-      font-size: 20px;
-      line-height: 44px;
-      margin-bottom: 30px;
-    }
+}
+.contactContainer h2 {
+  color: #fafaf8;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 18px;
+  line-height: 1.37;
+}
+@media screen and (min-width: 768px) {
+  .contactContainer h2 {
+    font-size: 20px;
+    line-height: 44px;
+    margin-bottom: 30px;
   }
 }
+
 .carMobileTelWrp {
   display: flex;
   flex-direction: column;
   gap: 9px;
-  @media screen and (min-width: $breakpoint-tablet) {
+}
+@media screen and (min-width: 768px) {
+  .carMobileTelWrp {
     gap: 20px;
   }
 }
+
 .carMobileTel {
   font-size: 16px;
-  color: $mainAccentColor;
-  &:hover,
-  &:focus {
-    color: $mainTextColor;
-  }
-  @media screen and (min-width: $breakpoint-tablet) {
+  color: #dfff00;
+}
+.carMobileTel:hover, .carMobileTel:focus {
+  color: #fafaf8;
+}
+@media screen and (min-width: 768px) {
+  .carMobileTel {
     font-size: 30px;
   }
 }
+
 .carMobileWrp {
   display: flex;
   align-items: center;
   gap: 8px;
-  svg {
-    width: 18px;
-    height: 18px;
-    @media screen and (min-width: $breakpoint-tablet) {
-      width: 24px;
-      height: 24px;
-    }
-  }
 }
+.carMobileWrp svg {
+  width: 18px;
+  height: 18px;
+}
+@media screen and (min-width: 768px) {
+  .carMobileWrp svg {
+    width: 24px;
+    height: 24px;
+  }
+}/*# sourceMappingURL=CarFromUSA.module.css.map */

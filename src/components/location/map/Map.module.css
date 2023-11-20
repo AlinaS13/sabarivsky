@@ -1,0 +1,21 @@
+.mapIframe {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 314px;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  border: 1px solid transparent;
+  filter: invert(90%) grayscale(1) hue-rotate(180deg);
+}
+@media screen and (min-width: 768px) {
+  .mapIframe {
+    min-height: 378px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mapIframe {
+    min-width: 570px;
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=Map.module.css.map */
